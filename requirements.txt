@@ -1,5 +1,47 @@
+# ============================================================
+#  Requirements pour le projet Big Data Kiva (PySpark)
+#  Auteur : Said Ouzzine
+# ============================================================
+
 pyspark==3.5.0
-pandas==2.2.0
-matplotlib==3.8.2
-numpy==1.26.3
 py4j==0.10.9.7
+pandas==2.2.0
+numpy==1.26.3
+matplotlib==3.8.2
+
+# ============================================================
+#  Instructions d'installation pour Windows
+# ============================================================
+
+# 1. Installation de Java (JDK 17 recommandé)
+#    Spark nécessite Java pour fonctionner (JVM).
+#    Télécharger JDK 17 :
+#       https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+#
+#    Installer dans :
+#       C:\Program Files\Java\jdk-17
+#
+#    Ajouter aux variables d'environnement :
+#       setx JAVA_HOME "C:\Program Files\Java\jdk-17"
+#       setx PATH "%JAVA_HOME%\bin;%PATH%"
+
+# 2. Installation de Hadoop Winutils (obligatoire pour PySpark sous Windows)
+#    Spark utilise winutils.exe pour gérer les permissions HDFS simulées.
+#    Télécharger winutils.exe (Hadoop 3.3.0) :
+#       https://github.com/cdarlint/winutils
+#
+#    Créer le dossier :
+#       C:\hadoop\bin
+#
+#    Copier winutils.exe dans :
+#       C:\hadoop\bin
+#
+#    Ajouter aux variables d'environnement :
+#       setx HADOOP_HOME "C:\hadoop"
+#       setx PATH "%HADOOP_HOME%\bin;%PATH%"
+
+# 3. Installation de PySpark
+#       pip install pyspark==3.5.0
+
+# 4. Vérification de l'installation
+#       python -c "import pyspark; print(pyspark.__version__)"
