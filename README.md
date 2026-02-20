@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white&style=for-the-badge)
+![Big Data](https://img.shields.io/badge/Big%20Data-Spark%20Cluster-orange?style=for-the-badge)
+
 # microcredit-bigdata-spark-analysis
 Analyse Big Data des micro‑crédits Kiva avec Spark (SparkR/pySpark) : nettoyage massif, jointures distribuées, exploration statistique, visualisations, modélisation (régression &amp; classification), comparaison de modèles ML et évaluation des performances sur données volumineuses.
 # Analyse Big Data des Micro-Crédits Kiva avec PySpark
